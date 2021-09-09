@@ -14,317 +14,854 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x15_Female J?
-U 1 1 61394D71
-P 3050 1400
-F 0 "J?" H 2900 2300 50  0000 L CNN
-F 1 "Conn_01x15_Female" H 2650 2200 50  0000 L CNN
-F 2 "" H 3050 1400 50  0001 C CNN
-F 3 "~" H 3050 1400 50  0001 C CNN
-	1    3050 1400
+L Connector:Jack-DC J1
+U 1 1 613A864B
+P 1000 1300
+F 0 "J1" H 1057 1625 50  0000 C CNN
+F 1 "Jack-DC" H 1057 1534 50  0000 C CNN
+F 2 "" H 1050 1260 50  0001 C CNN
+F 3 "~" H 1050 1260 50  0001 C CNN
+	1    1000 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x15_Female J?
-U 1 1 61397DD5
-P 3550 1400
-F 0 "J?" H 3442 2285 50  0000 C CNN
-F 1 "Conn_01x15_Female" H 3250 2200 50  0000 C CNN
-F 2 "" H 3550 1400 50  0001 C CNN
-F 3 "~" H 3550 1400 50  0001 C CNN
-	1    3550 1400
+L Regulator_Linear:L78L05_SO8 U1
+U 1 1 613A917B
+P 2700 1200
+F 0 "U1" H 2700 1442 50  0000 C CNN
+F 1 "L78L05_SO8" H 2700 1351 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 1400 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 2900 1200 50  0001 C CNN
+	1    2700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1600 2700 1500
+$Comp
+L Device:C C?
+U 1 1 613C74CA
+P 2200 1400
+F 0 "C?" H 2315 1446 50  0000 L CNN
+F 1 "C" H 2315 1355 50  0000 L CNN
+F 2 "" H 2238 1250 50  0001 C CNN
+F 3 "~" H 2200 1400 50  0001 C CNN
+	1    2200 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1250 2200 1200
+Connection ~ 2200 1200
+Wire Wire Line
+	2200 1200 2400 1200
+Wire Wire Line
+	2200 1550 2200 1600
+Wire Wire Line
+	2200 1600 2700 1600
+$Comp
+L Device:C C?
+U 1 1 613CAC2E
+P 3250 1400
+F 0 "C?" H 3365 1446 50  0000 L CNN
+F 1 "C" H 3365 1355 50  0000 L CNN
+F 2 "" H 3288 1250 50  0001 C CNN
+F 3 "~" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1250 3250 1200
+Wire Wire Line
+	3250 1200 3000 1200
+Wire Wire Line
+	2700 1600 3250 1600
+Wire Wire Line
+	3250 1600 3250 1550
+Connection ~ 2700 1600
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 613D1A8C
+P 1800 1600
+F 0 "SW?" H 1800 1885 50  0000 C CNN
+F 1 "SW_SPDT" H 1800 1794 50  0000 C CNN
+F 2 "" H 1800 1600 50  0001 C CNN
+F 3 "~" H 1800 1600 50  0001 C CNN
+	1    1800 1600
 	-1   0    0    -1  
 $EndComp
-Text GLabel 2800 700  0    50   Input ~ 0
+Wire Wire Line
+	2200 1600 2000 1600
+Connection ~ 2200 1600
+Wire Wire Line
+	1600 1500 1600 1400
+Wire Wire Line
+	1600 1400 1300 1400
+Wire Wire Line
+	1300 1200 1850 1200
+$Comp
+L power:GND #PWR?
+U 1 1 613DD2B3
+P 2700 1750
+F 0 "#PWR?" H 2700 1500 50  0001 C CNN
+F 1 "GND" H 2705 1577 50  0000 C CNN
+F 2 "" H 2700 1750 50  0001 C CNN
+F 3 "" H 2700 1750 50  0001 C CNN
+	1    2700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1750 2700 1600
+$Comp
+L power:+12V #PWR?
+U 1 1 613DF9AB
+P 1850 1100
+F 0 "#PWR?" H 1850 950 50  0001 C CNN
+F 1 "+12V" H 1865 1273 50  0000 C CNN
+F 2 "" H 1850 1100 50  0001 C CNN
+F 3 "" H 1850 1100 50  0001 C CNN
+	1    1850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1100 1850 1200
+Connection ~ 1850 1200
+Wire Wire Line
+	1850 1200 2200 1200
+$Comp
+L power:+5V #PWR?
+U 1 1 613E2831
+P 3250 1100
+F 0 "#PWR?" H 3250 950 50  0001 C CNN
+F 1 "+5V" H 3265 1273 50  0000 C CNN
+F 2 "" H 3250 1100 50  0001 C CNN
+F 3 "" H 3250 1100 50  0001 C CNN
+	1    3250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1200 3250 1100
+Connection ~ 3250 1200
+$Comp
+L Device:LED D?
+U 1 1 6140C236
+P 4500 1400
+F 0 "D?" H 4493 1145 50  0000 C CNN
+F 1 "LED" H 4493 1236 50  0000 C CNN
+F 2 "" H 4500 1400 50  0001 C CNN
+F 3 "~" H 4500 1400 50  0001 C CNN
+	1    4500 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61417BCF
+P 4500 1800
+F 0 "R?" H 4570 1846 50  0000 L CNN
+F 1 "R" H 4570 1755 50  0000 L CNN
+F 2 "" V 4430 1800 50  0001 C CNN
+F 3 "~" H 4500 1800 50  0001 C CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1650 4500 1550
+$Comp
+L power:+12V #PWR?
+U 1 1 61419FAA
+P 4500 1150
+F 0 "#PWR?" H 4500 1000 50  0001 C CNN
+F 1 "+12V" H 4515 1323 50  0000 C CNN
+F 2 "" H 4500 1150 50  0001 C CNN
+F 3 "" H 4500 1150 50  0001 C CNN
+	1    4500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1250 4500 1150
+$Comp
+L power:GND #PWR?
+U 1 1 6141F8BE
+P 4500 2000
+F 0 "#PWR?" H 4500 1750 50  0001 C CNN
+F 1 "GND" H 4505 1827 50  0000 C CNN
+F 2 "" H 4500 2000 50  0001 C CNN
+F 3 "" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2000 4500 1950
+$Comp
+L Connector:Conn_01x15_Female J5
+U 1 1 61397DD5
+P 7400 1700
+F 0 "J5" H 7292 2585 50  0000 C CNN
+F 1 "Conn_01x15_Female" H 7150 2500 50  0000 C CNN
+F 2 "" H 7400 1700 50  0001 C CNN
+F 3 "~" H 7400 1700 50  0001 C CNN
+	1    7400 1700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6650 1000 0    50   Input ~ 0
 D13
 Wire Wire Line
-	2850 700  2800 700 
-Text GLabel 2800 800  0    50   Input ~ 0
+	6700 1000 6650 1000
+Text GLabel 6650 1100 0    50   Input ~ 0
 3v3
-Text GLabel 2800 900  0    50   Input ~ 0
+Text GLabel 6650 1200 0    50   Input ~ 0
 REF
-Text GLabel 2750 1000 0    50   Input ~ 0
+Text GLabel 6600 1300 0    50   Input ~ 0
 A0
 Wire Wire Line
-	2850 800  2800 800 
+	6700 1100 6650 1100
 Wire Wire Line
-	2850 900  2800 900 
+	6700 1200 6650 1200
 Wire Wire Line
-	2850 1000 2750 1000
-Text GLabel 2750 1100 0    50   Input ~ 0
+	6700 1300 6600 1300
+Text GLabel 6600 1400 0    50   Input ~ 0
 A1
-Text GLabel 2750 1200 0    50   Input ~ 0
+Text GLabel 6600 1500 0    50   Input ~ 0
 A2
-Text GLabel 2750 1300 0    50   Input ~ 0
+Text GLabel 6600 1600 0    50   Input ~ 0
 A3
-Text GLabel 2750 1400 0    50   Input ~ 0
+Text GLabel 6600 1700 0    50   Input ~ 0
 A4
-Text GLabel 2750 1500 0    50   Input ~ 0
+Text GLabel 6600 1800 0    50   Input ~ 0
 A5
-Text GLabel 2750 1600 0    50   Input ~ 0
+Text GLabel 6600 1900 0    50   Input ~ 0
 A6
-Text GLabel 2750 1700 0    50   Input ~ 0
+Text GLabel 6600 2000 0    50   Input ~ 0
 A7
-Text GLabel 2750 1800 0    50   Input ~ 0
+Text GLabel 6600 2100 0    50   Input ~ 0
 5V
-Text GLabel 2750 1900 0    50   Input ~ 0
+Text GLabel 6600 2200 0    50   Input ~ 0
 RTS
-Text GLabel 2750 2000 0    50   Input ~ 0
+Text GLabel 6600 2300 0    50   Input ~ 0
 GND
-Text GLabel 2750 2100 0    50   Input ~ 0
+Text GLabel 6600 2400 0    50   Input ~ 0
 VIN
 Wire Wire Line
-	2750 2100 2850 2100
+	6600 2400 6700 2400
 Wire Wire Line
-	2750 2000 2850 2000
+	6600 2300 6700 2300
 Wire Wire Line
-	2850 1900 2750 1900
+	6700 2200 6600 2200
 Wire Wire Line
-	2850 1800 2750 1800
+	6700 2100 6600 2100
 Wire Wire Line
-	2750 1700 2850 1700
+	6600 2000 6700 2000
 Wire Wire Line
-	2850 1600 2750 1600
+	6700 1900 6600 1900
 Wire Wire Line
-	2750 1500 2850 1500
+	6600 1800 6700 1800
 Wire Wire Line
-	2850 1400 2750 1400
+	6700 1700 6600 1700
 Wire Wire Line
-	2750 1300 2850 1300
+	6600 1600 6700 1600
 Wire Wire Line
-	2850 1200 2750 1200
+	6700 1500 6600 1500
 Wire Wire Line
-	2750 1100 2850 1100
-Text GLabel 4000 700  0    50   Input ~ 0
+	6600 1400 6700 1400
+Text GLabel 7700 1000 2    50   Input ~ 0
 D12
-Wire Wire Line
-	4000 700  3750 700 
-Text GLabel 4000 800  0    50   Input ~ 0
+Text GLabel 7700 1100 2    50   Input ~ 0
 D11
-Text GLabel 4000 900  0    50   Input ~ 0
+Text GLabel 7700 1200 2    50   Input ~ 0
 D10
-Text GLabel 3950 1000 0    50   Input ~ 0
+Text GLabel 7750 1300 2    50   Input ~ 0
 D9
-Text GLabel 3950 1100 0    50   Input ~ 0
+Text GLabel 7750 1400 2    50   Input ~ 0
 D8
-Text GLabel 3950 1200 0    50   Input ~ 0
+Text GLabel 7750 1500 2    50   Input ~ 0
 D7
-Text GLabel 3950 1300 0    50   Input ~ 0
+Text GLabel 7750 1600 2    50   Input ~ 0
 D6
-Text GLabel 3950 1400 0    50   Input ~ 0
+Text GLabel 7750 1700 2    50   Input ~ 0
 D5
-Text GLabel 3950 1500 0    50   Input ~ 0
+Text GLabel 7750 1800 2    50   Input ~ 0
 D4
-Text GLabel 3950 1600 0    50   Input ~ 0
+Text GLabel 7750 1900 2    50   Input ~ 0
 D3
-Text GLabel 3950 1700 0    50   Input ~ 0
+Text GLabel 7750 2000 2    50   Input ~ 0
 D2
-Text GLabel 4000 1800 0    50   Input ~ 0
+Text GLabel 7700 2100 2    50   Input ~ 0
 GND
-Text GLabel 4000 1900 0    50   Input ~ 0
+Text GLabel 7700 2200 2    50   Input ~ 0
 RTS
-Text GLabel 3950 2000 0    50   Input ~ 0
+Text GLabel 7750 2300 2    50   Input ~ 0
 RX
-Text GLabel 3950 2100 0    50   Input ~ 0
+Text GLabel 7750 2400 2    50   Input ~ 0
 TX
 Wire Wire Line
-	3950 2100 3750 2100
+	7700 1000 7600 1000
 Wire Wire Line
-	3750 2000 3950 2000
+	7600 1100 7700 1100
 Wire Wire Line
-	4000 1900 3750 1900
+	7700 1200 7600 1200
 Wire Wire Line
-	3750 1800 4000 1800
+	7600 1300 7750 1300
 Wire Wire Line
-	3950 1700 3750 1700
+	7750 1400 7600 1400
 Wire Wire Line
-	3750 1600 3950 1600
+	7600 1500 7750 1500
 Wire Wire Line
-	3950 1500 3750 1500
+	7750 1600 7600 1600
 Wire Wire Line
-	3750 1400 3950 1400
+	7600 1700 7750 1700
 Wire Wire Line
-	3950 1300 3750 1300
+	7750 1800 7600 1800
 Wire Wire Line
-	3750 1200 3950 1200
+	7600 1900 7750 1900
 Wire Wire Line
-	3950 1100 3750 1100
+	7750 2000 7600 2000
 Wire Wire Line
-	3750 1000 3950 1000
+	7600 2100 7700 2100
 Wire Wire Line
-	3750 900  4000 900 
+	7600 2200 7700 2200
 Wire Wire Line
-	4000 800  3750 800 
+	7750 2300 7600 2300
+Wire Wire Line
+	7600 2400 7750 2400
 $Comp
-L Connector:Jack-DC J?
-U 1 1 613A864B
-P 900 950
-F 0 "J?" H 957 1275 50  0000 C CNN
-F 1 "Jack-DC" H 957 1184 50  0000 C CNN
-F 2 "" H 950 910 50  0001 C CNN
-F 3 "~" H 950 910 50  0001 C CNN
-	1    900  950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:L78L05_SO8 U?
-U 1 1 613A917B
-P 1700 850
-F 0 "U?" H 1700 1092 50  0000 C CNN
-F 1 "L78L05_SO8" H 1700 1001 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1800 1050 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 1900 850 50  0001 C CNN
-	1    1700 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 1050 1300 1050
-Wire Wire Line
-	1300 1050 1300 1250
-Wire Wire Line
-	1300 1250 1700 1250
-Wire Wire Line
-	1700 1250 1700 1150
-Wire Wire Line
-	1200 850  1250 850 
-Text GLabel 1200 1250 0    50   Input ~ 0
-GND
-Wire Wire Line
-	1200 1250 1300 1250
-Connection ~ 1300 1250
-Text GLabel 2200 850  0    50   Input ~ 0
-5V
-Wire Wire Line
-	2200 850  2000 850 
-$Comp
-L Sensor_Optical:LDR03 R?
-U 1 1 613C8DF6
-P 1150 1750
-F 0 "R?" V 800 1750 50  0000 C CNN
-F 1 "LDR03" V 900 1750 50  0000 C CNN
-F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1325 1750 50  0001 C CNN
-F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1150 1700 50  0001 C CNN
-	1    1150 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Sensor_Optical:LDR03 R?
-U 1 1 613CAF2B
-P 1150 2000
-F 0 "R?" V 1400 1900 50  0000 C CNN
-F 1 "LDR03" V 1300 1900 50  0000 C CNN
-F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1325 2000 50  0001 C CNN
-F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1150 1950 50  0001 C CNN
-	1    1150 2000
-	0    1    1    0   
+L Device:LED D?
+U 1 1 6146EE8C
+P 5150 1400
+F 0 "D?" H 5143 1145 50  0000 C CNN
+F 1 "LED" H 5143 1236 50  0000 C CNN
+F 2 "" H 5150 1400 50  0001 C CNN
+F 3 "~" H 5150 1400 50  0001 C CNN
+	1    5150 1400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 613CD13C
-P 1600 1750
-F 0 "R?" V 1393 1750 50  0000 C CNN
-F 1 "R" V 1484 1750 50  0000 C CNN
-F 2 "" V 1530 1750 50  0001 C CNN
-F 3 "~" H 1600 1750 50  0001 C CNN
-	1    1600 1750
-	0    1    1    0   
+U 1 1 6146EE92
+P 5150 1800
+F 0 "R?" H 5220 1846 50  0000 L CNN
+F 1 "R" H 5220 1755 50  0000 L CNN
+F 2 "" V 5080 1800 50  0001 C CNN
+F 3 "~" H 5150 1800 50  0001 C CNN
+	1    5150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1650 5150 1550
+$Comp
+L power:GND #PWR?
+U 1 1 6146EEA0
+P 5150 2000
+F 0 "#PWR?" H 5150 1750 50  0001 C CNN
+F 1 "GND" H 5155 1827 50  0000 C CNN
+F 2 "" H 5150 2000 50  0001 C CNN
+F 3 "" H 5150 2000 50  0001 C CNN
+	1    5150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2000 5150 1950
+Text GLabel 5150 1150 1    50   Input ~ 0
+D6
+Wire Wire Line
+	5150 1250 5150 1150
+Wire Wire Line
+	1200 2950 1200 2900
+Wire Wire Line
+	1500 2950 1350 2950
+$Comp
+L power:+5V #PWR?
+U 1 1 61430BEB
+P 1200 2900
+F 0 "#PWR?" H 1200 2750 50  0001 C CNN
+F 1 "+5V" H 1215 3073 50  0000 C CNN
+F 2 "" H 1200 2900 50  0001 C CNN
+F 3 "" H 1200 2900 50  0001 C CNN
+	1    1200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2950 2700 2950
+Wire Wire Line
+	2850 3050 2850 2950
+$Comp
+L power:GND #PWR?
+U 1 1 61427E42
+P 2850 3050
+F 0 "#PWR?" H 2850 2800 50  0001 C CNN
+F 1 "GND" H 2855 2877 50  0000 C CNN
+F 2 "" H 2850 3050 50  0001 C CNN
+F 3 "" H 2850 3050 50  0001 C CNN
+	1    2850 3050
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 613CD976
-P 1600 2000
-F 0 "R?" V 1700 2000 50  0000 C CNN
-F 1 "R" V 1800 2000 50  0000 C CNN
-F 2 "" V 1530 2000 50  0001 C CNN
-F 3 "~" H 1600 2000 50  0001 C CNN
-	1    1600 2000
+P 2450 3350
+F 0 "R4" V 2350 3450 50  0000 C CNN
+F 1 "R" V 2550 3200 50  0000 C CNN
+F 2 "" V 2380 3350 50  0001 C CNN
+F 3 "~" H 2450 3350 50  0001 C CNN
+	1    2450 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 613CD13C
+P 2450 2950
+F 0 "R3" V 2350 3050 50  0000 C CNN
+F 1 "R" V 2550 2800 50  0000 C CNN
+F 2 "" V 2380 2950 50  0001 C CNN
+F 3 "~" H 2450 2950 50  0001 C CNN
+	1    2450 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R2
+U 1 1 613CAF2B
+P 1650 3350
+F 0 "R2" V 1750 3250 50  0000 C CNN
+F 1 "LDR03" V 1550 3550 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1825 3350 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1650 3300 50  0001 C CNN
+	1    1650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R1
+U 1 1 613C8DF6
+P 1650 2950
+F 0 "R1" V 1750 2850 50  0000 C CNN
+F 1 "LDR03" V 1550 3150 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1825 2950 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1650 2900 50  0001 C CNN
+	1    1650 2950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1300 1750 1400 1750
-Text GLabel 1400 1600 0    50   Input ~ 0
-A0
-Text GLabel 1350 2150 0    50   Input ~ 0
-A1
+	4250 4000 4250 3850
 Wire Wire Line
-	1400 1600 1400 1750
-Connection ~ 1400 1750
-Wire Wire Line
-	1400 1750 1450 1750
-Wire Wire Line
-	1300 2000 1400 2000
-Wire Wire Line
-	1350 2150 1400 2150
-Wire Wire Line
-	1400 2150 1400 2000
-Connection ~ 1400 2000
-Wire Wire Line
-	1400 2000 1450 2000
-Text GLabel 2000 1750 0    50   Input ~ 0
-GND
-Text GLabel 950  1750 0    50   Input ~ 0
-5V
-Wire Wire Line
-	1750 1750 2000 1750
-Wire Wire Line
-	1750 2000 1750 1750
-Connection ~ 1750 1750
-Wire Wire Line
-	950  1750 1000 1750
-Wire Wire Line
-	1000 2000 1000 1750
-Connection ~ 1000 1750
+	4450 4000 4250 4000
 $Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 613EEC79
-P 2100 2600
-F 0 "J?" V 2038 2412 50  0000 R CNN
-F 1 "Conn_01x02_Female" V 2150 2750 50  0000 R CNN
-F 2 "" H 2100 2600 50  0001 C CNN
-F 3 "~" H 2100 2600 50  0001 C CNN
-	1    2100 2600
+L power:+5V #PWR?
+U 1 1 613FB42D
+P 4450 4000
+F 0 "#PWR?" H 4450 3850 50  0001 C CNN
+F 1 "+5V" V 4465 4128 50  0000 L CNN
+F 2 "" H 4450 4000 50  0001 C CNN
+F 3 "" H 4450 4000 50  0001 C CNN
+	1    4450 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 4000 3900 4000
+Wire Wire Line
+	4050 3850 4050 4000
+$Comp
+L power:+12V #PWR?
+U 1 1 613F8720
+P 3900 4000
+F 0 "#PWR?" H 3900 3850 50  0001 C CNN
+F 1 "+12V" V 3915 4128 50  0000 L CNN
+F 2 "" H 3900 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    3900 4000
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4150 3950 4150 3850
 $Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 613F37D8
-P 1550 2600
-F 0 "J?" V 1488 2412 50  0000 R CNN
-F 1 "Conn_01x02_Female" V 1600 3200 50  0000 R CNN
-F 2 "" H 1550 2600 50  0001 C CNN
-F 3 "~" H 1550 2600 50  0001 C CNN
-	1    1550 2600
+L power:GND #PWR?
+U 1 1 613F6535
+P 4150 3950
+F 0 "#PWR?" H 4150 3700 50  0001 C CNN
+F 1 "GND" H 4155 3777 50  0000 C CNN
+F 2 "" H 4150 3950 50  0001 C CNN
+F 3 "" H 4150 3950 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 613F1034
+P 4150 3650
+F 0 "J?" V 3996 3798 50  0000 L CNN
+F 1 "Conn_01x03_Female" V 4200 3300 50  0000 L CNN
+F 2 "" H 4150 3650 50  0001 C CNN
+F 3 "~" H 4150 3650 50  0001 C CNN
+	1    4150 3650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1250 600  0    50   Input ~ 0
-12V
-Wire Wire Line
-	1250 600  1250 850 
-Connection ~ 1250 850 
-Wire Wire Line
-	1250 850  1400 850 
-Text GLabel 1400 2950 0    50   Input ~ 0
-12V
-Wire Wire Line
-	1400 2950 1550 2950
-Wire Wire Line
-	1550 2950 1550 2800
-Text GLabel 1400 3050 0    50   Input ~ 0
-GND
-Wire Wire Line
-	1400 3050 1650 3050
-Wire Wire Line
-	1650 3050 1650 2800
-Text GLabel 2000 2950 0    50   Input ~ 0
-D4
-Text GLabel 2000 3050 0    50   Input ~ 0
+Text GLabel 5150 4000 0    50   Input ~ 0
 D5
+Text GLabel 5150 4100 0    50   Input ~ 0
+D4
 Wire Wire Line
-	2000 2950 2100 2950
+	5150 4000 5250 4000
 Wire Wire Line
-	2100 2800 2100 2950
+	5250 3850 5250 4000
 Wire Wire Line
-	2000 3050 2200 3050
+	5150 4100 5350 4100
 Wire Wire Line
-	2200 2800 2200 3050
+	5350 3850 5350 4100
+$Comp
+L Device:Buzzer BZ?
+U 1 1 614845EB
+P 7550 4250
+F 0 "BZ?" H 7702 4279 50  0000 L CNN
+F 1 "Buzzer" H 7702 4188 50  0000 L CNN
+F 2 "" V 7525 4350 50  0001 C CNN
+F 3 "~" V 7525 4350 50  0001 C CNN
+	1    7550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6148850E
+P 7300 4600
+F 0 "R?" H 7230 4554 50  0000 R CNN
+F 1 "R" H 7230 4645 50  0000 R CNN
+F 2 "" V 7230 4600 50  0001 C CNN
+F 3 "~" H 7300 4600 50  0001 C CNN
+	1    7300 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 4450 7300 4350
+Wire Wire Line
+	7300 4350 7450 4350
+$Comp
+L power:GND #PWR?
+U 1 1 6148AFAC
+P 7300 4900
+F 0 "#PWR?" H 7300 4650 50  0001 C CNN
+F 1 "GND" H 7305 4727 50  0000 C CNN
+F 2 "" H 7300 4900 50  0001 C CNN
+F 3 "" H 7300 4900 50  0001 C CNN
+	1    7300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4900 7300 4750
+Text GLabel 7200 3650 1    50   Input ~ 0
+D7
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 6148DECF
+P 7200 3900
+F 0 "JP?" V 7246 3812 50  0000 R CNN
+F 1 "Jumper_2_Open" V 7155 3812 50  0000 R CNN
+F 2 "" H 7200 3900 50  0001 C CNN
+F 3 "~" H 7200 3900 50  0001 C CNN
+	1    7200 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 3700 7200 3650
+Wire Wire Line
+	7200 4100 7200 4150
+Wire Wire Line
+	7200 4150 7450 4150
+Wire Wire Line
+	1800 2950 2300 2950
+Wire Wire Line
+	1800 3350 2300 3350
+Connection ~ 2700 2950
+Wire Wire Line
+	2700 2950 2600 2950
+Wire Wire Line
+	2600 3350 2700 3350
+Connection ~ 1350 2950
+Wire Wire Line
+	1350 2950 1200 2950
+Wire Wire Line
+	1350 3350 1500 3350
+Wire Wire Line
+	2700 2950 2700 3350
+Wire Wire Line
+	1350 2950 1350 3350
+$Comp
+L Device:R R?
+U 1 1 614E0EF3
+P 2400 4150
+F 0 "R?" V 2300 4250 50  0000 C CNN
+F 1 "R" V 2500 4000 50  0000 C CNN
+F 2 "" V 2330 4150 50  0001 C CNN
+F 3 "~" H 2400 4150 50  0001 C CNN
+	1    2400 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614E0EF9
+P 2400 3750
+F 0 "R?" V 2300 3850 50  0000 C CNN
+F 1 "R" V 2500 3600 50  0000 C CNN
+F 2 "" V 2330 3750 50  0001 C CNN
+F 3 "~" H 2400 3750 50  0001 C CNN
+	1    2400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R?
+U 1 1 614E0EFF
+P 1600 4150
+F 0 "R?" V 1700 4050 50  0000 C CNN
+F 1 "LDR03" V 1500 4350 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1775 4150 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1600 4100 50  0001 C CNN
+	1    1600 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R?
+U 1 1 614E0F05
+P 1600 3750
+F 0 "R?" V 1700 3650 50  0000 C CNN
+F 1 "LDR03" V 1500 3950 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1775 3750 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1600 3700 50  0001 C CNN
+	1    1600 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 3750 2250 3750
+Wire Wire Line
+	1750 4150 2250 4150
+$Comp
+L Device:R R?
+U 1 1 614E3BE4
+P 2400 4950
+F 0 "R?" V 2300 5050 50  0000 C CNN
+F 1 "R" V 2500 4800 50  0000 C CNN
+F 2 "" V 2330 4950 50  0001 C CNN
+F 3 "~" H 2400 4950 50  0001 C CNN
+	1    2400 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614E3BEA
+P 2400 4550
+F 0 "R?" V 2300 4650 50  0000 C CNN
+F 1 "R" V 2500 4400 50  0000 C CNN
+F 2 "" V 2330 4550 50  0001 C CNN
+F 3 "~" H 2400 4550 50  0001 C CNN
+	1    2400 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R?
+U 1 1 614E3BF0
+P 1600 4950
+F 0 "R?" V 1700 4850 50  0000 C CNN
+F 1 "LDR03" V 1500 5150 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1775 4950 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1600 4900 50  0001 C CNN
+	1    1600 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R?
+U 1 1 614E3BF6
+P 1600 4550
+F 0 "R?" V 1700 4450 50  0000 C CNN
+F 1 "LDR03" V 1500 4750 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 1775 4550 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1600 4500 50  0001 C CNN
+	1    1600 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 4550 2250 4550
+Wire Wire Line
+	1750 4950 2250 4950
+Wire Wire Line
+	1350 3350 1350 3750
+Wire Wire Line
+	1350 3750 1450 3750
+Connection ~ 1350 3350
+Wire Wire Line
+	1350 3750 1350 4150
+Wire Wire Line
+	1350 4150 1450 4150
+Connection ~ 1350 3750
+Wire Wire Line
+	1350 4150 1350 4550
+Wire Wire Line
+	1350 4550 1450 4550
+Connection ~ 1350 4150
+Wire Wire Line
+	1350 4550 1350 4950
+Wire Wire Line
+	1350 4950 1450 4950
+Connection ~ 1350 4550
+Wire Wire Line
+	2550 4950 2700 4950
+Wire Wire Line
+	2700 4950 2700 4550
+Connection ~ 2700 3350
+Wire Wire Line
+	2550 3750 2700 3750
+Connection ~ 2700 3750
+Wire Wire Line
+	2700 3750 2700 3350
+Wire Wire Line
+	2550 4150 2700 4150
+Connection ~ 2700 4150
+Wire Wire Line
+	2700 4150 2700 3750
+Wire Wire Line
+	2550 4550 2700 4550
+Connection ~ 2700 4550
+Wire Wire Line
+	2700 4550 2700 4150
+Text Label 2100 2950 0    50   ~ 0
+A0
+Text Label 2100 3350 0    50   ~ 0
+A1
+Text Label 2100 3750 0    50   ~ 0
+A2
+Text Label 2100 4150 0    50   ~ 0
+A3
+Text Label 2100 4550 0    50   ~ 0
+A4
+Text Label 2100 4950 0    50   ~ 0
+A5
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 61522486
+P 5450 3650
+F 0 "J?" V 5350 4050 50  0000 R CNN
+F 1 "Conn_01x06_Female" V 5500 3950 50  0000 R CNN
+F 2 "" H 5450 3650 50  0001 C CNN
+F 3 "~" H 5450 3650 50  0001 C CNN
+	1    5450 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61523857
+P 5400 4300
+F 0 "#PWR?" H 5400 4150 50  0001 C CNN
+F 1 "+5V" V 5415 4428 50  0000 L CNN
+F 2 "" H 5400 4300 50  0001 C CNN
+F 3 "" H 5400 4300 50  0001 C CNN
+	1    5400 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 3850 5450 4300
+Wire Wire Line
+	5450 4300 5400 4300
+$Comp
+L Device:R R?
+U 1 1 6152D5B4
+P 5550 4300
+F 0 "R?" H 5450 4150 50  0000 L CNN
+F 1 "R" H 5450 4250 50  0000 L CNN
+F 2 "" V 5480 4300 50  0001 C CNN
+F 3 "~" H 5550 4300 50  0001 C CNN
+	1    5550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4150 5550 3850
+$Comp
+L power:GND #PWR?
+U 1 1 61531738
+P 5550 4550
+F 0 "#PWR?" H 5550 4300 50  0001 C CNN
+F 1 "GND" H 5555 4377 50  0000 C CNN
+F 2 "" H 5550 4550 50  0001 C CNN
+F 3 "" H 5550 4550 50  0001 C CNN
+	1    5550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4550 5550 4450
+$Comp
+L power:+5V #PWR?
+U 1 1 615359AB
+P 5900 4600
+F 0 "#PWR?" H 5900 4450 50  0001 C CNN
+F 1 "+5V" V 5915 4728 50  0000 L CNN
+F 2 "" H 5900 4600 50  0001 C CNN
+F 3 "" H 5900 4600 50  0001 C CNN
+	1    5900 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4600 5650 4600
+Wire Wire Line
+	5650 4600 5650 3850
+$Comp
+L Device:R R?
+U 1 1 6153A0D7
+P 5750 4100
+F 0 "R?" H 5820 4146 50  0000 L CNN
+F 1 "R" H 5820 4055 50  0000 L CNN
+F 2 "" V 5680 4100 50  0001 C CNN
+F 3 "~" H 5750 4100 50  0001 C CNN
+	1    5750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6153A0DD
+P 5750 4350
+F 0 "#PWR?" H 5750 4100 50  0001 C CNN
+F 1 "GND" H 5755 4177 50  0000 C CNN
+F 2 "" H 5750 4350 50  0001 C CNN
+F 3 "" H 5750 4350 50  0001 C CNN
+	1    5750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4350 5750 4250
+Wire Wire Line
+	5750 3950 5750 3850
+Text Label 5550 3900 0    50   ~ 0
+D3
+Text Label 5750 3900 0    50   ~ 0
+D2
+Text GLabel 6200 2400 2    50   Input ~ 0
+VIN
+Text GLabel 6150 2300 2    50   Input ~ 0
+GND
+$Comp
+L power:+5V #PWR?
+U 1 1 6156FDD2
+P 6000 2400
+F 0 "#PWR?" H 6000 2250 50  0001 C CNN
+F 1 "+5V" V 6015 2528 50  0000 L CNN
+F 2 "" H 6000 2400 50  0001 C CNN
+F 3 "" H 6000 2400 50  0001 C CNN
+	1    6000 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61574A11
+P 6000 2300
+F 0 "#PWR?" H 6000 2050 50  0001 C CNN
+F 1 "GND" V 6005 2172 50  0000 R CNN
+F 2 "" H 6000 2300 50  0001 C CNN
+F 3 "" H 6000 2300 50  0001 C CNN
+	1    6000 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2300 6000 2300
+Wire Wire Line
+	6000 2400 6200 2400
+$Comp
+L Connector:Conn_01x15_Female J4
+U 1 1 61394D71
+P 6900 1700
+F 0 "J4" H 6750 2600 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 6300 2500 50  0000 L CNN
+F 2 "" H 6900 1700 50  0001 C CNN
+F 3 "~" H 6900 1700 50  0001 C CNN
+	1    6900 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
