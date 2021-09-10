@@ -1,0 +1,55 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 2267077-2
+#
+DEF 2267077-2 S 0 40 Y N 1 L N
+F0 "S" -200 631 50 H V L BNN
+F1 "2267077-2" -200 -300 50 H V L BNN
+F2 "TE_2267077-2" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Switch Toggle ON ON DPDT Long Baton Lever PC Pins 20VAC 20VDC 0.4VA PC Mount with Threads" 0 0 50 H I L BNN "Description"
+F5 "In Stock" 0 0 50 H I L BNN "Availability"
+F6 "2267077-2" 0 0 50 H I L BNN "Comment"
+F7 "TO-94 TE Connectivity" 0 0 50 H I L BNN "Package"
+F8 "None" 0 0 50 H I L BNN "Price"
+F9 "TE Connectivity" 0 0 50 H I L BNN "MF"
+F10 "2267077-2" 0 0 50 H I L BNN "MP"
+F11 "Compliant with Exemptions" 0 0 50 H I L BNN "EU_RoHS_Compliance"
+DRAW
+P 2 0 0 6 -200 500 0 500 N
+P 2 0 0 6 0 500 0 460 N
+P 2 0 0 6 -200 300 0 300 N
+P 2 0 0 6 0 300 0 340 N
+P 2 0 0 6 200 400 80 400 N
+P 2 0 0 6 80 400 -70 460 N
+P 2 0 0 6 -200 600 -200 -200 N
+P 2 0 0 6 -200 -200 200 -200 N
+P 2 0 0 6 200 -200 200 0 N
+P 2 0 0 6 200 0 200 400 N
+P 2 0 0 6 200 400 200 600 N
+P 2 0 0 6 200 600 -200 600 N
+C 80 400 12 0 0 6 N
+C 0 450 12 0 0 6 N
+C 0 350 12 0 0 6 N
+P 2 0 0 6 -200 100 0 100 N
+P 2 0 0 6 0 100 0 60 N
+P 2 0 0 6 -200 -100 0 -100 N
+P 2 0 0 6 0 -100 0 -60 N
+P 2 0 0 6 200 0 80 0 N
+P 2 0 0 6 80 0 -70 60 N
+C 80 0 12 0 0 6 N
+C 0 50 12 0 0 6 N
+C 0 -50 12 0 0 6 N
+X ~ 1 -400 500 200 R 40 40 0 0 P 
+X ~ 2 400 400 200 L 40 40 0 0 P 
+X ~ 3 -400 300 200 R 40 40 0 0 P 
+X ~ 4 -400 100 200 R 40 40 0 0 P 
+X ~ 5 400 0 200 L 40 40 0 0 P 
+X ~ 6 -400 -100 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
