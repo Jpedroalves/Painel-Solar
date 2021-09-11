@@ -562,7 +562,7 @@ U 1 1 614E3BF6
 P 2650 5100
 F 0 "R7" V 2750 5000 50  0000 C CNN
 F 1 "LDR03" V 2550 5300 50  0000 C CNN
-F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 2825 5100 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2825 5100 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2650 5050 50  0001 C CNN
 	1    2650 5100
 	0    1    1    0   
@@ -573,7 +573,7 @@ U 1 1 614E3BF0
 P 2650 5500
 F 0 "R8" V 2750 5400 50  0000 C CNN
 F 1 "LDR03" V 2550 5700 50  0000 C CNN
-F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 2825 5500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2825 5500 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2650 5450 50  0001 C CNN
 	1    2650 5500
 	0    1    1    0   
@@ -610,7 +610,7 @@ U 1 1 614E0F05
 P 2650 4300
 F 0 "R5" V 2750 4200 50  0000 C CNN
 F 1 "LDR03" V 2550 4500 50  0000 C CNN
-F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 2825 4300 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2825 4300 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2650 4250 50  0001 C CNN
 	1    2650 4300
 	0    1    1    0   
@@ -621,7 +621,7 @@ U 1 1 614E0EFF
 P 2650 4700
 F 0 "R6" V 2750 4600 50  0000 C CNN
 F 1 "LDR03" V 2550 4900 50  0000 C CNN
-F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 2825 4700 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2825 4700 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2650 4650 50  0001 C CNN
 	1    2650 4700
 	0    1    1    0   
