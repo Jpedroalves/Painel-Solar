@@ -489,17 +489,6 @@ F 3 "" H 6100 5150 50  0001 C CNN
 	1    6100 5150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J3
-U 1 1 61522486
-P 6150 4500
-F 0 "J3" V 6050 4900 50  0000 R CNN
-F 1 "Conn_01x06_Female" V 6200 4800 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-6_P5.08mm" H 6150 4500 50  0001 C CNN
-F 3 "~" H 6150 4500 50  0001 C CNN
-	1    6150 4500
-	0    -1   -1   0   
-$EndComp
 Text Label 2550 5800 0    50   ~ 0
 A5
 Text Label 2550 5400 0    50   ~ 0
@@ -796,7 +785,7 @@ U 1 1 613CAF2B
 P 2100 4200
 F 0 "R2" V 2200 4100 50  0000 C CNN
 F 1 "LDR03" V 2000 4400 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" V 2275 4200 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2275 4200 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2100 4150 50  0001 C CNN
 	1    2100 4200
 	0    1    1    0   
@@ -921,4 +910,26 @@ Wire Wire Line
 Connection ~ 9550 4900
 Wire Wire Line
 	9550 4900 9550 4750
+$Comp
+L Connector:Conn_01x04_Female J6
+U 1 1 61473C9D
+P 6250 4500
+F 0 "J6" V 6188 4212 50  0000 R CNN
+F 1 "Conn_01x04_Female" V 6097 4212 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 6250 4500 50  0001 C CNN
+F 3 "~" H 6250 4500 50  0001 C CNN
+	1    6250 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 61474DE5
+P 5950 4500
+F 0 "J3" V 5888 4312 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 5797 4312 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5950 4500 50  0001 C CNN
+F 3 "~" H 5950 4500 50  0001 C CNN
+	1    5950 4500
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

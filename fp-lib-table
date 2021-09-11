@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name TE_2267077-2)(type Legacy)(uri "C:/Users/Pedro Giló/Downloads/TE_2267077-2.mod")(options "")(descr ""))
+  (lib (name Painel-Solar)(type KiCad)(uri ${KIPRJMOD}/Painel-Solar.pretty)(options "")(descr ""))
 )
