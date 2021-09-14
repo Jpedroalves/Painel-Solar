@@ -540,7 +540,7 @@ U 1 1 614E3BF6
 P 2050 5400
 F 0 "R7" V 2150 5300 50  0000 C CNN
 F 1 "LDR03" V 1950 5600 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2225 5400 50  0001 C CNN
+F 2 "Painel-Solar:Borne_LAB_2" V 2225 5400 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2050 5350 50  0001 C CNN
 	1    2050 5400
 	0    1    1    0   
@@ -551,7 +551,7 @@ U 1 1 614E3BF0
 P 2050 5800
 F 0 "R8" V 2150 5700 50  0000 C CNN
 F 1 "LDR03" V 1950 6000 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2225 5800 50  0001 C CNN
+F 2 "Painel-Solar:Borne_LAB_2" V 2225 5800 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2050 5750 50  0001 C CNN
 	1    2050 5800
 	0    1    1    0   
@@ -588,7 +588,7 @@ U 1 1 614E0F05
 P 2050 4600
 F 0 "R5" V 2150 4500 50  0000 C CNN
 F 1 "LDR03" V 1950 4800 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2225 4600 50  0001 C CNN
+F 2 "Painel-Solar:Borne_LAB_2" V 2225 4600 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2050 4550 50  0001 C CNN
 	1    2050 4600
 	0    1    1    0   
@@ -599,7 +599,7 @@ U 1 1 614E0EFF
 P 2050 5000
 F 0 "R6" V 2150 4900 50  0000 C CNN
 F 1 "LDR03" V 1950 5200 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2225 5000 50  0001 C CNN
+F 2 "Painel-Solar:Borne_LAB_2" V 2225 5000 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2050 4950 50  0001 C CNN
 	1    2050 5000
 	0    1    1    0   
@@ -691,10 +691,6 @@ F 3 "~" V 7975 5200 50  0001 C CNN
 	1    8000 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6050 4700 6050 4950
-Wire Wire Line
-	5950 4700 5950 4850
 Text GLabel 4900 5000 3    50   Input ~ 0
 D4
 Text GLabel 4800 5000 3    50   Input ~ 0
@@ -738,7 +734,7 @@ U 1 1 613C8DF6
 P 2100 3800
 F 0 "R1" V 2200 3700 50  0000 C CNN
 F 1 "LDR03" V 2000 4000 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2275 3800 50  0001 C CNN
+F 2 "Painel-Solar:Borne_LAB_2" V 2275 3800 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2100 3750 50  0001 C CNN
 	1    2100 3800
 	0    1    1    0   
@@ -749,7 +745,7 @@ U 1 1 613CAF2B
 P 2100 4200
 F 0 "R2" V 2200 4100 50  0000 C CNN
 F 1 "LDR03" V 2000 4400 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 2275 4200 50  0001 C CNN
+F 2 "Painel-Solar:Borne_LAB_2" V 2275 4200 50  0001 C CNN
 F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 2100 4150 50  0001 C CNN
 	1    2100 4200
 	0    1    1    0   
@@ -817,17 +813,6 @@ F 3 "~" H 7750 5450 50  0001 C CNN
 	1    7750 5450
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector:Conn_01x04_Female J6
-U 1 1 61473C9D
-P 6250 4500
-F 0 "J6" V 6188 4212 50  0000 R CNN
-F 1 "Conn_01x04_Female" V 6097 4212 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 6250 4500 50  0001 C CNN
-F 3 "~" H 6250 4500 50  0001 C CNN
-	1    6250 4500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4600 4800 4600 4700
 $Comp
@@ -859,5 +844,16 @@ F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3775 1600 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3750 1700 50  0001 C CNN
 	1    3750 1750
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J6
+U 1 1 61473C9D
+P 6250 4500
+F 0 "J6" V 6188 4212 50  0000 R CNN
+F 1 "Conn_01x04_Female" V 6097 4212 50  0000 R CNN
+F 2 "Painel-Solar:Borne_LAB_4" H 6250 4500 50  0001 C CNN
+F 3 "~" H 6250 4500 50  0001 C CNN
+	1    6250 4500
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

@@ -24,17 +24,6 @@ F 3 "~" H 2100 1810 50  0001 C CNN
 	1    2050 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:L78L05_SO8 U1
-U 1 1 613A917B
-P 3750 1750
-F 0 "U1" H 3750 1992 50  0000 C CNN
-F 1 "L78L05_SO8" H 3750 1901 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3850 1950 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 3950 1750 50  0001 C CNN
-	1    3750 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 2150 3750 2050
 $Comp
@@ -705,26 +694,11 @@ $EndComp
 Wire Wire Line
 	6050 4700 6050 4950
 Wire Wire Line
-	5850 4950 6050 4950
-Wire Wire Line
 	5950 4700 5950 4850
-Wire Wire Line
-	5850 4850 5950 4850
-Text GLabel 5850 4950 0    50   Input ~ 0
+Text GLabel 4900 5000 3    50   Input ~ 0
 D4
-Text GLabel 5850 4850 0    50   Input ~ 0
+Text GLabel 4800 5000 3    50   Input ~ 0
 D5
-$Comp
-L Connector:Conn_01x03_Female J2
-U 1 1 613F1034
-P 4600 4500
-F 0 "J2" V 4446 4648 50  0000 L CNN
-F 1 "Conn_01x03_Female" V 4650 4150 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4600 4500 50  0001 C CNN
-F 3 "~" H 4600 4500 50  0001 C CNN
-	1    4600 4500
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 613F6535
@@ -736,38 +710,28 @@ F 3 "" H 4600 4800 50  0001 C CNN
 	1    4600 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 4800 4600 4700
 $Comp
 L power:+12V #PWR06
 U 1 1 613F8720
-P 4350 4850
-F 0 "#PWR06" H 4350 4700 50  0001 C CNN
-F 1 "+12V" V 4365 4978 50  0000 L CNN
-F 2 "" H 4350 4850 50  0001 C CNN
-F 3 "" H 4350 4850 50  0001 C CNN
-	1    4350 4850
-	0    -1   -1   0   
+P 4500 5050
+F 0 "#PWR06" H 4500 4900 50  0001 C CNN
+F 1 "+12V" V 4515 5178 50  0000 L CNN
+F 2 "" H 4500 5050 50  0001 C CNN
+F 3 "" H 4500 5050 50  0001 C CNN
+	1    4500 5050
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4500 4700 4500 4850
-Wire Wire Line
-	4500 4850 4350 4850
 $Comp
 L power:+5V #PWR08
 U 1 1 613FB42D
-P 4900 4850
-F 0 "#PWR08" H 4900 4700 50  0001 C CNN
-F 1 "+5V" V 4915 4978 50  0000 L CNN
-F 2 "" H 4900 4850 50  0001 C CNN
-F 3 "" H 4900 4850 50  0001 C CNN
-	1    4900 4850
-	0    1    1    0   
+P 4700 5050
+F 0 "#PWR08" H 4700 4900 50  0001 C CNN
+F 1 "+5V" V 4715 5178 50  0000 L CNN
+F 2 "" H 4700 5050 50  0001 C CNN
+F 3 "" H 4700 5050 50  0001 C CNN
+	1    4700 5050
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4900 4850 4700 4850
-Wire Wire Line
-	4700 4850 4700 4700
 $Comp
 L Sensor_Optical:LDR03 R1
 U 1 1 613C8DF6
@@ -864,15 +828,36 @@ F 3 "~" H 6250 4500 50  0001 C CNN
 	1    6250 4500
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4600 4800 4600 4700
 $Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 61474DE5
-P 5950 4500
-F 0 "J3" V 5888 4312 50  0000 R CNN
-F 1 "Conn_01x02_Female" V 5797 4312 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5950 4500 50  0001 C CNN
-F 3 "~" H 5950 4500 50  0001 C CNN
-	1    5950 4500
+L Connector:Conn_01x05_Female J2
+U 1 1 61425088
+P 4700 4500
+F 0 "J2" V 4638 4212 50  0000 R CNN
+F 1 "Conn_01x05_Female" V 4547 4212 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4700 4500 50  0001 C CNN
+F 3 "~" H 4700 4500 50  0001 C CNN
+	1    4700 4500
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 4700 4700 5050
+Wire Wire Line
+	4500 4700 4500 5050
+Wire Wire Line
+	4800 5000 4800 4700
+Wire Wire Line
+	4900 5000 4900 4700
+$Comp
+L Regulator_Linear:L7805 U1
+U 1 1 6147A2C6
+P 3750 1750
+F 0 "U1" H 3750 1992 50  0000 C CNN
+F 1 "L7805" H 3750 1901 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3775 1600 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3750 1700 50  0001 C CNN
+	1    3750 1750
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
